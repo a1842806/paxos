@@ -9,6 +9,7 @@ A Java implementation of the Paxos consensus algorithm for distributed systems. 
 
 ## Project Structure
 
+```txt
 paxos/
 ├── src/
 │   ├── main/java/com/example/
@@ -19,6 +20,7 @@ paxos/
 │   └── test/java/com/example/
 │       └── PaxosTest.java        # Test scenarios
 └── [pom.xml]
+```
 
 ## Building the Project
 
