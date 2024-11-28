@@ -26,7 +26,7 @@ To build the project, run:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/paxos.git
+git clone https://github.com/a1842806/paxos
 
 # Navigate to project directory
 cd paxos
