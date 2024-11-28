@@ -379,7 +379,7 @@ public class CouncilMember {
             case LARGE_DELAY:
                 // Simulate a large delay before sending
                 try {
-                    Thread.sleep(6000); // 6 seconds delay
+                    Thread.sleep(5000); // 5 seconds delay
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

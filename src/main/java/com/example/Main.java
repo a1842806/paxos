@@ -29,6 +29,13 @@ public class Main {
                 if (behavior == MemberBehavior.NO_RESPONSE && Math.random() < 0.5) {
                     behavior = MemberBehavior.values()[(int) (Math.random() * MemberBehavior.values().length)];
                 }
+                if (i == 1) {
+                    behavior = MemberBehavior.IMMEDIATE_RESPONSE;
+                } else if (i == 2) {
+                    behavior = MemberBehavior.LARGE_DELAY;
+                } else if (i == 3) {
+                    behavior = MemberBehavior.SMALL_DELAY;
+                }
 
                 CouncilMember member = new CouncilMember(
                     i,
