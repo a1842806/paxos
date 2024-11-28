@@ -84,7 +84,7 @@ public class Main {
         // Wait for the election to complete
         try { Thread.sleep(6000); } catch (InterruptedException e) { e.printStackTrace(); }
 
-        // Shutdown all members
+        // Shutdown all members (The election might not have completed yet)
         for (CouncilMember member : members) {
             member.shutdown();
         }
