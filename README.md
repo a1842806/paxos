@@ -59,8 +59,8 @@ mvn exec:java
 ```
 
 ## Network Behaviors
-Behavior |	Description |	Delay
-IMMEDIATE_RESPONSE	| Instant reply | 	0ms
-SMALL_DELAY	| Minor latency	| 1000ms
-LARGE_DELAY	| Network congestion |	6000ms
-NO_RESPONSE	| Message loss	| ∞
+| Behavior | Description | Delay |
+| IMMEDIATE_RESPONSE | Instant reply | 0ms |
+| SMALL_DELAY | Minor latency | 1000ms |
+| LARGE_DELAY | Network congestion | 6000ms |
+| NO_RESPONSE | Message loss | ∞ |
