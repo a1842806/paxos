@@ -35,6 +35,9 @@ cd paxos
 
 # Build the project
 mvn clean install
+
+# Compile
+mvn compile
 ```
 
 ## Running Test
