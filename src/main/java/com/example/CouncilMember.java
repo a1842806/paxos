@@ -208,8 +208,7 @@ public class CouncilMember {
         // Check if the incoming proposal number is higher than any promised so far
         if (message.getProposalNumber() > promisedProposalNumber) {
             // Update promised proposal number and send a PROMISE message back
-            System.out.println("[Member " + id + "] Promising to Member " + message.getFrom() +
-                    " (previous promised: " + promisedProposalNumber + ")");
+            System.out.println("[Member " + id + "] Promising to Member " + message.getFrom());
             promisedProposalNumber = message.getProposalNumber();
             // Send PROMISE message, including any previously accepted value
             Message promise = new Message(
@@ -222,7 +221,7 @@ public class CouncilMember {
         } else {
             // Proposal number is not higher; reject by sending a NACK
             System.out.println("[Member " + id + "] Rejecting PREPARE from Member " + message.getFrom() +
-                    " (already promised to: " + promisedProposalNumber + ")");
+                    " (already promised)");
             // Send NACK
             Message nack = new Message(
                     Message.Type.NACK,
